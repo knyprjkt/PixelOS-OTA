@@ -1,12 +1,13 @@
 {
     "response": [
         {
-            "datetime": "",
-            "filename": "",
-            "id": "",
-            "size": "",
-            "url": "https://github.com/knyprjkt/PixelOS-OTA/releases/download/",
-            "version": ""
+            "datetime": "1743180783",
+            "filename": "PixelOS_spes-15.0-20250328-1655.zip",
+            "id": "6a0c3503400ddab062d26a54503a49d8",
+            "size": "2051501986",
+            "url": "https://github.com/knyprjkt/PixelOS-OTA/releases/download/20250328/PixelOS_spes-15.0-20250328-1655.zip",
+            "version": "15"
         }
     ]
 }
+
