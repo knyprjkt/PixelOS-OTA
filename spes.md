@@ -3,6 +3,8 @@
 - Merge latest 'android-4.19-lts' of https://github.com/frstprjkt/kernel-lts (4.19.331)
 - Merge latest 'lineage-20' of https://github.com/LineageOS/android_kernel_qcom_sm8250
 - Kernel device tree completely rebased, fixing issues and deleting unwanted commits
+- Add timeout for power supply wakelocks, prevent them from crashing and breaking idle
+- Return to default lmkd configs
 
 # Apr 01, 2025
 - Recalculate dynamic power coefficients and update dmips for big.LITTLE cores
