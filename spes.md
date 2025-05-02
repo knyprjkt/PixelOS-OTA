@@ -9,6 +9,7 @@
 - Demote unwanted logging to debug
 - Fixes and updates for binder drivers
 - Switch to aidl health hal
+- Switch to the Pixelos-gm 
 
 # April 17, 2025
 - Optimize and checkout binder to android14-5.15
