@@ -1,3 +1,15 @@
+# Mai 01, 2025
+- Import lmkd props from fogona for less overhead
+- Increase offroad audio buffer size to 256kb for fix audio stuttering
+- Rebase in device tree kernel, removing unwanted overlays, problematic commits...
+- Align cpusets with crosshatch
+- Align default rate limit values ​​with Google devices
+- Restrict max CPU freq to critical hints
+- Merge latest 'lineage-20' of https://github.com/LineageOS/android_kernel_qcom_sm8250
+- Demote unwanted logging to debug
+- Fixes and updates for binder drivers
+- Switch to aidl health hal
+
 # April 17, 2025
 - Optimize and checkout binder to android14-5.15
 - Merge latest 'android-4.19-lts' of https://github.com/frstprjkt/kernel-lts (4.19.331)
