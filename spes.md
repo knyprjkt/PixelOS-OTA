@@ -1,4 +1,4 @@
-# Mai 29, 2025 
+# Mai 28, 2025 
 # Clean flash required if on builds before 05/20
 - Uprev audio HAL to V7
 - Optimize SF durations
