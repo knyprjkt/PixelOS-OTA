@@ -1,4 +1,5 @@
 # Jun 14, 2025 
+## This update requires you to install your keybox manually in order to have Play Integrity working, I will make keyboxes available in my telegram group.
 + Checkout binder to d53a061 from android13-5.10
 + Revert phase offsets as duration
    - This caused out-of-order buffer errors and jank at 90Hz due to lack of matching high-fps timing.
