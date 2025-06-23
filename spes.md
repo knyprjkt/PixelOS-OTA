@@ -1,4 +1,6 @@
 # Jun 23, 2025
++ XimiParts: HBM, DC Dimming and thermal reworked and improved
+  - Refresh rate qs title added
 + Powerhint and init uclamp tunning completely redone based on google komodo and redbull
 + Backported zsmalloc from mainline.
 + Backported zram from mainline.
