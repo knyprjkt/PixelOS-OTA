@@ -1,4 +1,4 @@
-# Jun 23, 2025
+# Jun 28, 2025
 + simple_lmk: Lower pressure threshold
   - Reduce lag during heavy multitasking
 + sched/walt: Fix negative count of sched_asym_cpucapacity static key
