@@ -1,21 +1,22 @@
 # Jun 23, 2025
-+ XimiParts: HBM, DC Dimming and thermal reworked and improved
-  - Refresh rate qs title added
-+ Powerhint and init uclamp tunning completely redone based on google komodo and redbull
-+ Backported zsmalloc from mainline.
-+ Backported zram from mainline.
-+ Backport usb uvc from mainline
-+ zstd: Update zstd to facebook/zstd@c5926fb
-  - Merge optimizations from Samsung
-+ sched: Implement tapered dvfs_headroom
-  - Optimize quadratic headroom calculation
-  - Apply quadratic tapering to dvfs headroom
-  - Make DVFS headroom capacity-aware and add low-util suppression
-+ mm/vmscan: reclaim more pages to find free pages in compaction
-  - add a new member reclaim_state in struct shrink_control
-  - calculate reclaimed slab caches in all reclaim paths
-  - add checks for incorrect handling of current->reclaim_state
-  - do not set reclaim_state on soft limit reclaim
-+ zram: allow zram to allocate CMA pages
-+ Revert "qcacld-3.0: Do not allow any wakelocks to be held"
-  - Avoid problems with wifi
++ simple_lmk: Lower pressure threshold
+  - Reduce lag during heavy multitasking
++ sched/walt: Fix negative count of sched_asym_cpucapacity static key
++ cpufreq: schedutil: Ignore rate limit when scaling up with FIE present
++ cpufreq/sched: Fix the usage of CPUFREQ_NEED_UPDATE_LIMITS
++ cpufreq: schedutil: Fix superfluous updates caused by need_freq_update
++ cpufreq: schedutil: Clean up
++ cpufreq: schedutil: Reduce DVFS headroom boost
++ Merge branch 'lineage-20' of @LineageOS/android_kernel_qcom_sm8250
+  - Reapply new patch from upstream kernel
++ spes: sepolicy: Label remaining wakeups nodes
++ spes: Import systemui preopt otimizations from hw pixel
++ spes: Enable R8 optimizations for system_server and SystemUI
++ spes: Remove default dexpreopt compiler filter override
+  - 'speed-profile' is the default
+  - 'everything' consumes significantly more storage and RAM
++ spes: props: Enable adpf cpu hint session for SurfaceFlinger and HWUI
++ spes: Build sendhint
++ spes: init: Increase zram size
+  - Our new kernel allows us to use more zram
++ spes: audio: Load mixer_paths configs properly
