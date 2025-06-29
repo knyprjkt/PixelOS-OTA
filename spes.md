@@ -1,4 +1,5 @@
 # Jun 29, 2025
+## Disregard if you are on the Jun 28 build
 + simple_lmk: Lower pressure threshold 
   - Reduce multitasking lag
 + walt: Fix negative sched_asym_cpucapacity count
