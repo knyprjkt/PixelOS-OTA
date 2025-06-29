@@ -1,11 +1,11 @@
 {
     "response": [
         {
-            "datetime": "1751108761",
-            "filename": "PixelOS_spes-15.0-20250628-1134.zip",
-            "id": "b1516b482467a93535936301447a53c8",
-            "size": "1944719413",
-            "url": "https://github.com/knyprjkt/PixelOS-OTA/releases/download/20250628/PixelOS_spes-15.0-20250628-1134.zip",
+            "datetime": "1751206786",
+            "filename": "PixelOS_spes-15.0-20250629-1424.zip",
+            "id": "46130b4bec02bb8793722a174f58be08",
+            "size": "1944681462",
+            "url": "https://github.com/knyprjkt/PixelOS-OTA/releases/download/20250629/PixelOS_spes-15.0-20250629-1424.zip",
             "version": "15"
         }
     ]
