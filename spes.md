@@ -4,17 +4,15 @@
 - Update carrier configs from vauxite
 - Disable UFFD GC via OVERRIDE_ENABLE_UFFD_GC
 - Update power profiles from TKQ1.221114.001-V816.0.11.0.TGKMIXM
-- Update some blobs from LA.UM.9.15.2.r1-10600-KAMORTA.QSSI14.0 and LA.QSSI.15.0.r1-14500-qssi.0
-- Remove software c2 codec overrides & bring back omx avc codec
-- Load mixer_paths configs properly
-- Update brightness restrictions for VRR
-- kgsl: Refactor bus hint/mod & increase HFI timeout & Use kthread instead of workqueue for event work
+- Update blobs from LA.UM.9.15.2.r1-10600-KAMORTA.QSSI14 & LA.QSSI.15.0.r1-14500
+- Remove software c2 codec overrides, restore omx avc
+- Fix mixer_paths config loading
+- Update VRR brightness restrictions
+- kgsl: Refactor bus hints/mod, increase HFI timeout, use kthread for events
 - Switch to more efficient DVFS headroom
-- spes_defconfig: Use lz4 as zram backend
-   - Although zstd offers better compression rates, its decompression is about 3x slower than lz4.
-   - Favors system responsiveness over minor gains in compressed memory.
-- lz4/crypto/incfs: Use ARM64 v8 ASM to accelerate lz4 decompression
-- lz4armv8: Update assembly instructions from Huawei kernel drop
-- lz4: Import arm64 V8 ASM lz4 decompression acceleration
-- lz4: Import v1.10.0 from upstream
+- spes_defconfig: Use lz4 zram backend
+  - zstd compresses better but decompresses ~3x slower; lz4 improves responsiveness
+- lz4/crypto/incfs: Use ARM64 v8 ASM for faster lz4 decompression
+- lz4armv8: Update asm from Huawei kernel drop
+- lz4: Import arm64 v8 ASM accel, v1.10.0 from upstream
 - spes_defconfig: Drop CONFIG_CPU_BOOST
