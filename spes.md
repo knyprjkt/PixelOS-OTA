@@ -9,3 +9,15 @@
 - Bring back omx avc codec
 - Load mixer_paths configs properly
 - Update brightness restrictions for VRR
+
+- kgsl: Refactor bus hint/mod
+- kgsl: increase HFI timeout
+- kgsl: Use kthread instead of workqueue for event work
+- spes_defconfig: Drop CONFIG_CPU_BOOST
+- spes_defconfig: Use lz4 as zram backend
+   - Although zstd offers better compression rates, its decompression is about 3x slower than lz4.
+   - Favors system responsiveness over minor gains in compressed memory.
+- lz4/crypto/incfs: Use ARM64 v8 ASM to accelerate lz4 decompression
+- lz4armv8: Update assembly instructions from Huawei kernel drop
+- lz4: Import arm64 V8 ASM lz4 decompression acceleration
+- lz4: Import v1.10.0 from upstream
