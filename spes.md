@@ -9,10 +9,7 @@
 - Bring back omx avc codec
 - Load mixer_paths configs properly
 - Update brightness restrictions for VRR
-
-- kgsl: Refactor bus hint/mod
-- kgsl: increase HFI timeout
-- kgsl: Use kthread instead of workqueue for event work
+- kgsl: Refactor bus hint/mod & increase HFI timeout & Use kthread instead of workqueue for event work
 - spes_defconfig: Drop CONFIG_CPU_BOOST
 - spes_defconfig: Use lz4 as zram backend
    - Although zstd offers better compression rates, its decompression is about 3x slower than lz4.
