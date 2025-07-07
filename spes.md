@@ -9,6 +9,7 @@
 - Load mixer_paths configs properly
 - Update brightness restrictions for VRR
 - kgsl: Refactor bus hint/mod & increase HFI timeout & Use kthread instead of workqueue for event work
+- Switch to more efficient DVFS headroom
 - spes_defconfig: Use lz4 as zram backend
    - Although zstd offers better compression rates, its decompression is about 3x slower than lz4.
    - Favors system responsiveness over minor gains in compressed memory.
