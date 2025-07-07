@@ -1,4 +1,4 @@
-# Jun 29, 2025
+# Jul 07, 2025
 - Reduce zram size to 70%
   - We were using 80% which caused an overload on the processor and worsened memory management.
 - Update carrier configs from vauxite
