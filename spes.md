@@ -1,18 +1,8 @@
-# Jul 07, 2025
-- Reduce zram size to 70%
-  - We were using 80% which caused an overload on the processor and worsened memory management.
-- Update carrier configs from vauxite
-- Disable UFFD GC via OVERRIDE_ENABLE_UFFD_GC
-- Update power profiles from TKQ1.221114.001-V816.0.11.0.TGKMIXM
-- Update blobs from LA.UM.9.15.2.r1-10600-KAMORTA.QSSI14 & LA.QSSI.15.0.r1-14500
-- Remove software c2 codec overrides, restore omx avc
-- Fix mixer_paths config loading
-- Update VRR brightness restrictions
-- kgsl: Refactor bus hints/mod, increase HFI timeout, use kthread for events
-- Switch to more efficient DVFS headroom
-- spes_defconfig: Use lz4 zram backend
-  - zstd compresses better but decompresses ~3x slower; lz4 improves responsiveness
-- lz4/crypto/incfs: Use ARM64 v8 ASM for faster lz4 decompression
-- lz4armv8: Update asm from Huawei kernel drop
-- lz4: Import arm64 v8 ASM accel, v1.10.0 from upstream
-- spes_defconfig: Drop CONFIG_CPU_BOOST
+# Jul 25, 2025
+- Increase zram size to 75%
+- More optimized DVFS headroom boost
+- Cleaning up problematic commits
+- Backported accelerated arm64 libraries from mainline.
+- Backported FUSE filesystem changes from kernel 5.4 with passthrough
+- Memory management completely redone with new mainline backports
+- Backport userfaultfd support completely
