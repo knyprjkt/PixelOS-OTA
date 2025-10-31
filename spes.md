@@ -5,5 +5,5 @@
 - Fixed palm sensor and other sepolicy denials
 - Update Xiaomi drivers from Antennae kernel (power supply, usb and pstore)
 - Several new upstream/backports on the kernel side (tbl, zram, bpf, sched, IncrementalFS, etc)
-- Fixes issues with memory management and scheduler (Like black screen during deepsleep and extreme lags due to memory pressure
+- Fixes issues with memory management and scheduler (Like black screen during deepsleep and extreme lags due to memory pressure)
 - Bring SurfaceFlinger offsets from google redbull and latch all buffers 
