@@ -1,9 +1,9 @@
-# Jul 25, 2025
-- Define charging control path for Lineage Health HAL
-- Increase zram size to 75%
-- More optimized DVFS headroom boost
-- Cleaning up problematic commits
-- Backported accelerated arm64 libraries from mainline.
-- Backported FUSE filesystem changes from kernel 5.4 with passthrough
-- Memory management completely redone with new mainline backports
-- Backport userfaultfd support completely
+# Out 31, 2025
+- Fixed charging control
+- Fixed codecs-related issues (like video and screen recording lags, etc)
+- Fixed doze-related issues (like offline charging and AOD)
+- Fixed palm sensor and other sepolicy denials
+- Update Xiaomi drivers from Antennae kernel (power supply, usb and pstore)
+- Several new upstream/backports on the kernel side (tbl, zram, bpf, sched, IncrementalFS, etc)
+- Fixes issues with memory management and scheduler (Like black screen during deepsleep and extreme lags due to memory pressure
+- Bring SurfaceFlinger offsets from gogole redbull and latch all buffers 
