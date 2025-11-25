@@ -1,6 +1,8 @@
 # Nov 25, 2025 (HotFix)
 - Fix battery indicator in the syv variant.
 
+If you are on the build from the 24th and did not experience the problem described above, you do not need to update.
+
 # Nov 24, 2025
 - Backport fuse-bpf, afs and nfs from k5.10
 - Update xiaomi drivers from Antennae kernel (power, custom_project, usb, audio)
