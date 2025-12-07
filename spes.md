@@ -1,3 +1,13 @@
+# Dec 07, 2025
+- Android QPR1 update
+- Switch to LZ4 for EROFS compression for improved decompression speed
+- Set readahead_size_kb=128 for the relevant partitions to avoid memory pressure
+- Disables some hwui/sf debug props
+- Downscale task snapshots to 70% for better performance.
+- Fixed sound/ringtone when using headphones
+- Updated all Xiaomi drivers to the latest antenna HEAD, resolving multiple issues including thermal and fast charging.
+- Improve Simple LMK memory management
+
 # Nov 25, 2025 (HotFix)
 - Fix battery indicator in the syv variant.
 
