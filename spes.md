@@ -1,3 +1,10 @@
+# Dec 14, 2025
+- Enable 60 fps video record suporte in Aperture
+- Switch to common QCOM AIDL bootctrl HAL
+- Switch to Lineage Power hal
+- Tune F2FS and dirty writeout policy
+- Some issues in the PixelOS source have been fixed, like the lock screen pattern and custom ROM detection by some apps.
+
 # Dec 07, 2025
 - Android QPR1 update
 - Use LZ4 for EROFS compression for improved decompression speed
