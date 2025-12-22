@@ -1,6 +1,6 @@
 ## Overview
 
-This document provides instructions for installing, updating, and modifying the ROM.
+This document provides instructions for installing and updating the ROM.
 
 - **Clean Flash**: required when coming from stock firmware or another ROM.
 - **Dirty Flash**: used for OTA or manual updates without wiping data.
