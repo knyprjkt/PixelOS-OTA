@@ -1,69 +1,161 @@
-## Overview
+# Installation Guides
 
-This document provides instructions for installing and updating the ROM.
+* **[Clean Installation](#clean-flash-guide-pixelos-spes)**
+    * *Required when coming from stock firmware or another ROM.*
 
-- **Clean Flash**: required when coming from stock firmware or another ROM.
-- **Dirty Flash**: used for OTA or manual updates without wiping data.
-Always read the instructions carefully and back up your data before proceeding.
+* **[Update / Dirty Flash](#dirty-flashupdate-guide-pixelos-spes)**
+    * *Used for OTA or manual updates without wiping data*
 
-## Requirements
-- Unlocked bootloader
-- ADB & Fastboot
-- ROM package
-- Recovery packages (`boot.img`...)
+* **[KernelSU Installation](#kernelsu-guide-pixelos-spes)**
+    * *Instructions for flashing the KernelSU patched boot image.*
 
-## Clean Flash
+------------
 
-Required when flashing from **stock firmware** or **another ROM**.
+# Clean flash Guide: PixelOS (spes)
 
-### Steps
-1. Boot into **fastboot**
-2. Flash recovery images:
-```bash
-fastboot flash vendor_boot vendor_boot.img
-fastboot flash boot boot.img
-```
-3. Reboot to recovery:
-```bash
-fastboot reboot recovery
-```
-4. Factory reset:
-```
-Main Menu > Factory Reset > Format Data / Factory Reset > Format Data
-```
-5. Reboot to recovery
-6. Apply update:
-```
-Apply Update > Apply from ADB
-```
-7. Flash ROM from sdcard or adb:
-```bash
-adb sideload rom.zip
-```
-8. Reboot
+This guide details the clean installation process of **PixelOS 16.1** for the **Redmi Note 11 (spes)**.
+
+> [!WARNING]
+> **Important:**
+> * Backup your data before proceeding. This process will wipe your internal storage.
+> * Ensure your battery is charged above 50%.
+> * You are responsible for your device. Follow the steps carefully.
 
 ---
 
-## Dirty Flash / Update
+## Required Files
 
-For updates **without wiping data**. Backups recommended.
+Ensure you have downloaded the following files:
 
-### OTA
+1.  **ROM:** `PixelOS_spes-XXX.zip`
+2.  **Recovery:** `RECOVERY-PixelOS_spes-XXX.zip`
 
-1. On your device, navigate to:
-```
-Settings > System > System Updater > Check for updates
-```
-2. If an update is available, download and install it.
+### File Preparation
+Before starting, extract the ROM zip file. Locate and copy the following files to your ADB/Fastboot folder:
+* `boot.img`
+* `vendor_boot.img`
+* `dtbo.img`
 
-### Recovery
-1. Boot into recovery
-2. Apply update:
-```
-Apply Update > Apply from ADB
-```
-3. Flash ROM from sdcard or adb:
+---
+
+## Installation Instructions
+
+### 1. Boot into Fastboot
+Power off the device. Turn it on by holding **Volume Down** + **Power Button** until the Fastboot screen appears.
+
+### 2. Flash Boot Images
+Open a terminal (CMD/PowerShell) in the folder where your files are located and run the following commands:
+
 ```bash
-adb sideload rom.zip
+fastboot flash vendor_boot vendor_boot.img
+fastboot flash dtbo dtbo.img
+fastboot flash boot boot.img
 ```
-4. Reboot
+
+### 3. Reboot to Recovery
+While still in Fastboot mode, run:
+
+```bash
+fastboot reboot recovery
+```
+
+### 4. Factory Reset
+Once in Recovery mode, use the Volume buttons to navigate and the Power button to select:
+
+1. Select **Factory Reset**.
+2. Select **Format Data / Factory Reset**.
+
+### 6. Apply Update
+1.  From the main menu, select **Apply Update**.
+2.  Select **Apply from ADB**.
+
+Note: If installing via SDCard, select **Apply from SDCard**, navigate to the file, and skip to step 8.
+
+### 7. Flash ROM
+On your computer, run the command below to sideload the ROM file.
+
+```bash
+adb sideload PixelOS_spes-XXX.zip
+```
+
+Note: The process may stop at 47% on the computer terminal with a success message or "Total xfer: 1.00x". This is normal and indicates the installation is complete.
+
+------------
+
+# Dirty flash/Update Guide: PixelOS (spes)
+
+This guide details how to update **PixelOS** without wiping your personal data.
+
+> [!WARNING]
+> **Important:**
+> * Although this process preserves data, it is highly recommended to **backup important files** before proceeding.
+> * Ensure your battery is charged above 50%.
+
+---
+
+## Method 1: OTA (Automatic)
+
+The easiest way to update is via the system settings.
+
+1.  On your device, navigate to:
+    **Settings > System > System Updater**
+2.  Tap **Check for updates**.
+3.  If an update is available, download and install it following the on-screen prompts.
+
+---
+
+## Method 2: Recovery (Manual via ADB)
+
+Use this method if the OTA fails or if you prefer manual installation.
+
+### 1. Boot into Recovery
+Reboot your device into recovery mode (hold **Volume Up** + **Power** during boot, or use the Advanced Restart menu).
+
+### 2. Apply Update
+1.  From the main menu, select **Apply Update**.
+2.  Select **Apply from ADB**.
+
+### 3. Flash ROM
+On your computer, run the command below to sideload the ROM file.
+
+```bash
+adb sideload PixelOS_spes-XXX.zip
+```
+
+------------
+
+# KernelSU Guide: PixelOS (spes)
+
+This guide details how to flash the KernelSU-patched boot image for **PixelOS 16.1**.
+
+> [!WARNING]
+> **Important:**
+> * Modifying the boot image carries risks. Ensure you have the original `boot.img` available in case you need to restore it.
+
+---
+
+## Required File
+
+Download the following file:
+* **Boot Image:** `KSU-BootImage-PixelOS_spes-XXX.img`
+
+---
+
+## Installation Instructions
+
+### 1. Boot into Fastboot
+Power off the device. Turn it on by holding **Volume Down** + **Power Button** until the Fastboot screen appears.
+
+### 2. Flash Boot Image
+Open a terminal (CMD/PowerShell) in the folder where the file is located and run:
+
+```bash
+fastboot flash boot KSU-BootImage-PixelOS_spes-XXX.img
+```
+
+### 3. Reboot
+Reboot your device to the system:
+
+```Bash
+fastboot reboot
+```
