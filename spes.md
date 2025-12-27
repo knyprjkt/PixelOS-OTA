@@ -1,3 +1,14 @@
+# Dec 27, 2025
+- Kernel fully reworked, based on the qcom_8250 and Antennae kernel
+- Improved overall system stability, scheduler efficiency, memory management, and power consumption
+- Disable high performance transitions
+- Restrict 60fps video recording to SD and HD on camera 0 (Aperture only)
+- Fix wakeups denials
+- Fine-tune foreground cpuset
+- December security patch 
+- Clone apps added
+- Enable AOD wallppaper
+
 # Dec 14, 2025
 - Enable 60 fps video record suporte in Aperture
 - Switch to common QCOM AIDL bootctrl HAL
