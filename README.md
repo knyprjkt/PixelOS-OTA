@@ -31,7 +31,7 @@ Ensure you have downloaded the following files:
 2.  **Recovery:** `RECOVERY-PixelOS_spes-XXX.zip`
 
 ### File Preparation
-Before starting, extract the ROM zip file. Locate and copy the following files to your ADB/Fastboot folder:
+Before starting, extract the **RECOVERY** zip file. Locate and copy the following files to your ADB/Fastboot folder:
 * `boot.img`
 * `vendor_boot.img`
 * `dtbo.img`
