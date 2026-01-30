@@ -5,6 +5,7 @@
 - Fixed battery indicator issue in maxim
 - Show LTE icon instead of 4G
 - Kernel built with full LLVM and the latest AOSP clang 22.0.1
+- Strong integrity by default
 - Source side (Most interesting changes): Implement the newly reverse-engineered smartspace + January security patch
 
 # Dec 27, 2025
