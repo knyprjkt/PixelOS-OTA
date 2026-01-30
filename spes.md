@@ -1,4 +1,4 @@
-# Jan 28, 2026
+# Jan 30, 2026
 - Improved scheduler and memory management (Again)
 - Fix multiple memory leaks from latest build
 - Another cleanup of debug/unused drivers in kernel
@@ -6,7 +6,7 @@
 - Show LTE icon instead of 4G
 - Kernel built with full LLVM and the latest AOSP clang 22.0.1
 - Source side (Most interesting changes): Implement the newly reverse-engineered smartspace + January security patch
-- 
+
 # Dec 27, 2025
 - Kernel fully reworked, based on the qcom_8250 and Antennae kernel
 - Improved overall system stability, scheduler efficiency, memory management, and power consumption
