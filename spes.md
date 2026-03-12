@@ -1,3 +1,18 @@
+# Mar 12, 2026
+- A16 QPR2 Update
+- Optimize LLC cache affinity tiebreaker in CASS.
+- Partially upstream mq-deadline to mainline and use this as the default IO scheduler.
+- Merge lastest lineage-20 backports.
+- Import usb uvc from 6.10-rc5
+- Fix adsp modules load.
+- Setup DeviceAsWebcam
+- Fix double-free in dbitmap of binder.
+- Don't log on EINTR in binder.
+- Thaw the entire victim process in simple lmk.
+- Skip reclaim throttle on critical processes.
+- Properly disable deep sleep states when the screen is on.
+- Sync Xiaomi Drivers (touch, display, camera, power and usb drivers) with Antennae kernel.
+
 # Jan 30, 2026
 - Improved scheduler and memory management (Again)
 - Fix multiple memory leaks from latest build
@@ -6,7 +21,7 @@
 - Show LTE icon instead of 4G
 - Kernel built with full LLVM and the latest AOSP clang 22.0.1
 - Strong integrity by default
-- Source side (Most interesting changes): Implement the newly reverse-engineered smartspace + January security patch
+- Source side (Most interesting changes): Implement the newly reverse-engineered smartspace - January security patch
 
 # Dec 27, 2025
 - Kernel fully reworked, based on the qcom_8250 and Antennae kernel
