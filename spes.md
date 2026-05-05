@@ -1,3 +1,13 @@
+# Mai 05, 2026e
+- Switch to new Asano R2 kernel, with improvements in memory management, scheduler, and more.
+- Add support for WLAN cables.
+- Fix random reboots and other related issues.
+- Fix playback failures in most streaming apps.
+- Fix system using software codecs instead of hardware ones for screen recording and other tasks, resolving lag and related issues.
+- Drop redbull phase offsets due to jitter regression.
+- Tune battery throttling curve.
+- Sync with antennae drivers, fixing usb-related issues (otg, charging, etc).
+
 # Mar 12, 2026
 - A16 QPR2 Update
 - Optimize LLC cache affinity tiebreaker in CASS.
