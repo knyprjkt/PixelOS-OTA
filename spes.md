@@ -1,4 +1,4 @@
-# Mai 05, 2026e
+# Mai 05, 2026
 - Switch to new Asano R2 kernel, with improvements in memory management, scheduler, and more.
 - Add support for WLAN cables.
 - Fix random reboots and other related issues.
