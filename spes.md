@@ -1,3 +1,7 @@
+# Mai 11, 2026
+- Switch back to redbull phase offsets as duration due lag curse.
+- Some pixelos source updates
+
 # Mai 05, 2026
 - Switch to new Asano R2 kernel, with improvements in memory management, scheduler, and more.
 - Add support for WLAN cables.
